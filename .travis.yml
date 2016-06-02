@@ -7,4 +7,4 @@ install:
 script:
   - python manage.py test home
   - coverage run --source=home manage.py test home
-after_success: coveralls
+after_success: coveralls 
