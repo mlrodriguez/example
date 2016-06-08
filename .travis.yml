@@ -12,3 +12,4 @@ script:
   - chmod 777 gitApi.sh
   - ./gitApi.sh
 after_success: coveralls 
+
