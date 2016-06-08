@@ -6,10 +6,10 @@ install:
   - pip install coveralls
 script:
   - printenv
-  - set
   - env
   - python manage.py test home
   - coverage run --source=home manage.py test home
   - chmod 777 gitApi.sh
   - ./gitApi.sh
 after_success: coveralls 
+
