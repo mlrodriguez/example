@@ -5,6 +5,9 @@ install:
   - pip install -r travis/requirements.txt
   - pip install coveralls
 script:
+  - printenv
+  - set
+  - env
   - python manage.py test home
   - coverage run --source=home manage.py test home
 after_success: coveralls 
