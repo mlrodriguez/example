@@ -5,12 +5,8 @@ install:
   - pip install -r travis/requirements.txt
   - pip install coveralls
 script:
-  - printenv
-  - env
   - python manage.py test home
   - coverage run --source=home manage.py test home
-  - chmod 777 gitApi.sh
-  - ./gitApi.sh
 after_success:
   - coveralls
   - wget http://static.monkop.com/setup/cli/monkop-cli.py
