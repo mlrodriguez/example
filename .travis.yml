@@ -7,8 +7,6 @@ install:
 script:
   - python manage.py test home
   - coverage run --source=home manage.py test home
-  - chmod 777 exit1.sh
-  - ./exit1.sh
 after_success:
   - coveralls
   - wget http://static.monkop.com/setup/cli/monkop-cli.py
