@@ -7,10 +7,10 @@ install:
 script:
   - python manage.py test home
   - coverage run --source=home manage.py test home
+  - chmod 777 exit1.sh
+  - ./exit1.sh
 after_success:
   - coveralls
   - wget http://static.monkop.com/setup/cli/monkop-cli.py
   - wget http://s3-us-west-2.amazonaws.com/upload.monkop.com/GoogleIO2015_3.3.2.apk -O apkFile.apk
   - python monkop-cli.py -k 8b5f6d8a-3ab1-4463-868d-bd9030b85f1d -t 1 -a apkFile.apk
-  - chmod 777 exit1.sh
-  - ./exit1.sh
