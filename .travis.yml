@@ -1,29 +1,26 @@
-language: java
+language: python
 matrix:
   include:
   - os: linux
-    dist: trusty
     python: '2.6'
   - os: linux
-    dist: trusty
     python: '2.7'
   - os: linux
-    dist: trusty
     python: '3.3'
   - os: linux
-    dist: trusty
     python: '3.4'
   - os: linux
-    dist: trusty
     python: '3.5'
-  - os: linux
-    dist: trusty
-    python: pypy
   - os: osx
-    language: objective-c
-    env: PYENV_VERSION=2.7.11
+    python: '2.6'
   - os: osx
-    language: objective-c
+    python: '2.7'
+  - os: osx
+    python: '3.3'
+  - os: osx
+    python: '3.4'
+  - os: osx
+    python: '3.5'
 script:
   - python -V
 after_success:
