@@ -4,5 +4,5 @@ script:
 after_success:
   - curl http://static.monkop.com/setup/cli/monkop-cli.py -o monkop-cli.py
   - curl http://s3-us-west-2.amazonaws.com/upload.monkop.com/GoogleIO2015_3.3.2.apk -o apkFile.apk
-  - python monkop-cli.py -k $monkopapikey -w -t 1 -a apkFile.apk 
+  - python monkop-cli.py -k $monkopapikey -w -t 1 -a apkFile.apk
   
