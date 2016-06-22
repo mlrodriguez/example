@@ -1,6 +1,6 @@
 machine:
-  java:
-    version: openjdk7
+  pyhton:
+    version: 2.7.5
 test:
   post:
     - curl http://static.monkop.com/setup/cli/monkop-cli.py -o monkop-cli.py
